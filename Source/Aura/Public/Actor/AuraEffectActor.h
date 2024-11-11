@@ -25,6 +25,12 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditAnywhere)
+	float HealthIncrease = 0.0f;
+
+	UPROPERTY(EditAnywhere)
+	float ManaIncrease = 0.0f;
+
 private:
 	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<USphereComponent> Sphere;
